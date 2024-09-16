@@ -1,10 +1,13 @@
 import App from "../App";
+import PokedexProvider from "./PokedexProvider";
 import SearchProvider from "./SearchProvider";
 
-const Providers = ({ children }) => {
+const Providers = () => {
     return (
         <SearchProvider>
-            <App />
+            <PokedexProvider>
+                    <App />
+            </PokedexProvider>
         </SearchProvider>
     );
 };
